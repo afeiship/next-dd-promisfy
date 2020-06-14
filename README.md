@@ -10,5 +10,13 @@ npm install -S @feizheng/next-dd-promisfy
 ```js
 import '@feizheng/next-dd-promisfy';
 
-//DOCS here!
+const getPhoneInfo = nx.ddPromisfy(dd.device.base.getPhoneInfo, { context: dd.device.base });
+
+// call the promisfy function
+getPhoneInfo()
+  .then(res=>{
+    console.log(res);
+  }).catch(err=>{
+    console.log(err);
+  });
 ```
