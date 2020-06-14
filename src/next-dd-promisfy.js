@@ -4,6 +4,7 @@
   var DEFAULT_OPTIONS = { context: null };
 
   nx.ddPromisfy = function (inFn, inOptions) {
+    if (typeof inFn !== 'function') return inFn;
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
     return function (opts) {
       return new Promise(function (resolve, reject) {
