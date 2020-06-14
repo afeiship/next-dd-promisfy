@@ -20,3 +20,6 @@ getPhoneInfo()
     console.log(err);
   });
 ```
+
+## resources
+- http://bluebirdjs.com/docs/api/promise.promisify.html

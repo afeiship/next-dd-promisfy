@@ -2,8 +2,8 @@
  * name: @feizheng/next-dd-promisfy
  * description: Promisfy for dingtalk.
  * homepage: https://github.com/afeiship/next-dd-promisfy
- * version: 1.0.0
- * date: 2020-06-14T06:24:57.941Z
+ * version: 1.0.1
+ * date: 2020-06-14T06:26:36.644Z
  * license: MIT
  */
 
