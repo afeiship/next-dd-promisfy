@@ -2,8 +2,8 @@
  * name: @feizheng/next-dd-promisfy
  * description: Promisfy for dingtalk.
  * homepage: https://github.com/afeiship/next-dd-promisfy
- * version: 1.0.1
- * date: 2020-06-14T06:26:36.644Z
+ * version: 1.0.2
+ * date: 2020-06-14T06:39:03.188Z
  * license: MIT
  */
 
@@ -15,7 +15,7 @@
   nx.ddPromisfy = function (inFn, inOptions) {
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
     return function () {
-      new Promise(function (resolve, reject) {
+      return new Promise(function (resolve, reject) {
         return function (opts) {
           var args = nx.mix({
             onSuccess: function (res) { resolve(res); },

@@ -6,7 +6,7 @@
   nx.ddPromisfy = function (inFn, inOptions) {
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
     return function () {
-      new Promise(function (resolve, reject) {
+      return new Promise(function (resolve, reject) {
         return function (opts) {
           var args = nx.mix({
             onSuccess: function (res) { resolve(res); },
