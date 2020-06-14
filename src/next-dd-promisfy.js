@@ -5,15 +5,13 @@
 
   nx.ddPromisfy = function (inFn, inOptions) {
     var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
-    return function () {
+    return function (opts) {
       return new Promise(function (resolve, reject) {
-        return function (opts) {
-          var args = nx.mix({
-            onSuccess: function (res) { resolve(res); },
-            onFail: function (err) { reject(err); }
-          }, opts);
-          return inFn.apply(options.context, args);
-        };
+        var args = nx.mix({
+          onSuccess: function (res) { resolve(res); },
+          onFail: function (err) { reject(err); }
+        }, opts);
+        return inFn.call(options.context, args);
       })
     };
   };
