@@ -26,6 +26,9 @@ getPhoneInfo()
   });
 ```
 
+## resources
+- http://bluebirdjs.com/docs/api/promise.promisify.html
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-dd-promisfy/blob/master/LICENSE.txt).
 

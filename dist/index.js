@@ -3,7 +3,7 @@
  * description: Promisfy for dingtalk.
  * homepage: https://github.com/afeiship/next-dd-promisfy
  * version: 1.0.0
- * date: 2020-11-21 09:35:20
+ * date: 2020-11-21 09:36:41
  * license: MIT
  */
 
